@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+main {
+  width: 960px;
+  margin: 0 auto;
+font-size: 16px;
+color: #cdcdb1;
+}
+h1 {font-family: 'Metal Mania', cursive;
+  text-align: center;
+font-size: 4em;}
+h2 {font-family: 'Metal Mania', cursive;
+font-size: 2em;
+text-align: center;}
+h3 {font-family: 'Metal Mania' cursive;
+margin: 20px;}
+p {margin: 5px 30px 10px 30px;}
+
+.header-top {
+  width:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+.discography-main-row {
+  text-align: center;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+ }
+.discography {
+  text-align: center;
+  width:150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+ }
+ul {list-style-type: square;}
+.main-window {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+a.link01 {color: light-blue;
+text-decoration: underline;}
