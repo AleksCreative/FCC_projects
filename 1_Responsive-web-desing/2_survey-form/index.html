@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aleks' FCC: Survey form</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Book readers' survey</h1>
+    </header>
+
+    <main>
+      <div id="container">
+        <p id="description">We are gathering information about people and books they are reading. Do you read books regularily, what was the last book you have read? Please fill in the form below to help us find out more about your reading habits.</p>
+
+        <form id="survey-form">
+
+          <div id="intro-questions">
+
+            <div class="section">
+              <label id="name-label" for="name">* Your name:
+              </label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="section">
+              <label id="email-label" for="email">* Your email:
+              </label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="section">
+              <label id="number-label" for="number">* Your age:
+              </label>
+              <input type="number" name="age" id="number" min="1" max="150" placeholder="18">
+            </div>
+
+          </div>
+
+          <div id="reading-questions">
+
+            <div class="section">
+
+              <label id="dropdown-label" for="dropdown">What is your favourite literary genre?</label>
+
+              <select id="dropdown">
+                <option value="drama">Drama</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="novel">Novel</option>
+                <option value="poetry">Poetry</option>
+                <option value="fiction">Fiction</option>
+                <option value="biography">Biography</option>
+                <option value="mystery">Mystery</option>
+                <option value="other">Other/I don't have one</option>
+              </select>
+
+            </div>
+
+            <div class="section">
+
+              <fieldset>
+                <legend>How many books did you read over the last 12 months?</legend>
+
+                <input type="radio" id="books0" name="book-number" value="1">
+                <label for="books0">None</label>
+
+                <input type="radio" id="books1-5" name="book-number" value="2">
+                <label for="books1-5">1 - 5</label>
+
+                <input type="radio" id="books6-10" name="book-number" value="3">
+                <label for="books6-10">6 - 10</label>
+
+                <input type="radio" id="books11-15" name="book-number" value="4">
+                <label for="books11-15">11 - 15</label>
+
+                <input type="radio" id="books16plus" name="book-number" value="5">
+                <label for="books16plus">16 or more</label>
+
+              </fieldset>
+
+            </div>
+
+            <div class="section">
+
+              <fieldset>
+                <legend>What is your typical environment for reading books?</legend>
+
+                <input type="radio" id="reading-home" name="reading-environment" value="1">
+                <label for="reading-home">Reading at home</label>
+
+                <input type="radio" id="reading-bed" name="reading-environment" value="2">
+                <label for="reading-bed">Reading in bed</label>
+
+                <input type="radio" id="reading-holiday" name="reading-environment" value="3">
+                <label for="reading-holiday">Reading on holiday</label>
+
+                <input type="radio" id="reading-shool" name="reading-environment" value="4">
+                <label for="reading-shool">Reading at school/work</label>
+
+                <input type="radio" id="reading-other" name="reading-environment" value="5">
+                <label for="reading-other">Other</label>
+
+                <input type="radio" id="reading-none" name="reading-environment" value="6">
+                <label for="reading-none">None - I don't read books</label>
+              </fieldset>
+
+            </div>
+
+            <div class="section">
+
+              <fieldset>
+                <legend>Where do you get your books?</legend>
+
+                <input type="checkbox" id="bookshop" name="bookshop" value="1">
+                <label for="bookshop">Bookshop</label>
+
+                <input type="checkbox" id="library" name="library" value="2">
+                <label for="library">Library</label>
+
+                <input type="checkbox" id="online" name="online" value="3">
+                <label for="online">Online</label>
+
+                <input type="checkbox" id="nowhere" name="nowhere" value="4">
+                <label for="nowhere">Nowhere - I don't read</label>
+              </fieldset>
+
+            </div>
+
+          </div><!-- #reading-questions -->
+
+          <div class="section">
+            <label for="comments">What was the last book you have read?</label>
+            <textarea id="comments" name="comments" placeholder="Enter a book title and the autor"></textarea>
+          </div>
+
+          <input id="submit" type="submit" value="Submit">
+
+        </form>
+
+      </div><!-- #container -->
+    </main>
+
+    <footer>Made with &#9829; by &nbsp;<a href="https://github.com/AleksCreative" target="_blank">Aleks</a>
+    </footer>
+
+  </body>
+</html>
