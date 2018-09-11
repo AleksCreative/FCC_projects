@@ -1,0 +1,75 @@
+/* ------ Aleks' FCC: Little Egg Company stylesheet ------- */
+
+/* 01 ------ General styles ------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  width: 100%;
+
+}
+
+header {
+  height: 130px;
+  background-color: yellow;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+
+}
+
+#nav-bar li {
+  display: inline-block;
+  height: 40px;
+}
+
+#nav-bar li a {
+  display: block;
+
+  text-decoration: none;
+  }
+
+#main {
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.top-40 {
+  position: relative;
+  top: 40px;
+}
+
+/* ------ Styles for medium size devices ----- */
+
+
+
+/* ------ Styles for for desktops ----- */
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  #nav-bar ul {
+    text-align: right;
+  }
+
+  #header img {
+    display: block;
+    text-align: left;
+  }
+}

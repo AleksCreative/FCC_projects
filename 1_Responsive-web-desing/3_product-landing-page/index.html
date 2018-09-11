@@ -3,99 +3,107 @@
   <head>
     <meta charset="utf-8">
     <title>Aleks' FCC: Product Landing page</title>
+    <link rel="stylesheet" href="master.css">
   </head>
   <body>
     <header id="header">
-      <h1>Little Egg Company</h1>
-      <img id="header-img" src="#" alt="logo">
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#products" class="nav-link">Products</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container top-40">
+        <img id="header-img" src="#" alt="logo">
+      </div>
+      <div class="container top-40">
+        <h1>Little Egg Company</h1>
+      </div>
+      <div class="container">
+        <nav id="nav-bar" class="container">
+          <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
+    <main id="main" class="top-40">
+      <div class="container">
+        <section id="about">
 
-      <section id="about">
+          <div id="about-intro">
+            <h2>Who we are</h2>
+            <p>We are a number one company that delivers fresh eggs directly to your doorstep. When you shop with us you can be sure that our eggs are always free range, locally sourced and the best possible quality.</p>
+          </div>
+          <div id="about-video">
+            (video)
+          </div>
+          <div id="about-producers">
+            <div class="card">
+              <img src="#" alt="hen and family">
+              <h3>Hen and Family</h3>
+              <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
+            </div>
+            <div class="card">
+              <img src="#" alt="">
+              <h3>Hen and Family</h3>
+              <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
+            </div>
+            <div class="card">
+              <img src="#" alt="">
+              <h3>Hen and Family</h3>
+              <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
+            </div>
+            <div class="card">
+              <img src="#" alt="">
+              <h3>Hen and Family</h3>
+              <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
+            </div>
+          </div>
 
-        <div id="about-intro">
-          <h2>Who we are</h2>
-          <p>We are a number one company that delivers fresh eggs directly to your doorstep. When you shop with us you can be sure that our eggs are always free range, locally sourced and the best possible quality.</p>
-        </div>
-        <div id="about-video">
-          (video)
-        </div>
-        <div id="about-producers">
-          <div class="card">
-            <img src="#" alt="hen and family">
-            <h3>Hen and Family</h3>
-            <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
-          </div>
-          <div class="card">
-            <img src="#" alt="">
-            <h3>Hen and Family</h3>
-            <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
-          </div>
-          <div class="card">
-            <img src="#" alt="">
-            <h3>Hen and Family</h3>
-            <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
-          </div>
-          <div class="card">
-            <img src="#" alt="">
-            <h3>Hen and Family</h3>
-            <p>Hen is one of our main egg suppliers. She is a dedicated and hard working chicken, always making sure that the eggs delivered by her and her girls are always to the highest standards.</p>
-          </div>
-        </div>
+        </section><!-- #about -->
+      </div><!-- .container -->
 
-      </section><!-- #about -->
+      <section id="products" class="container">
+          <div id="products-featured">
 
-      <section id="products">
+          </div>
+          <div id="products-container">
+            <div class="product-single">
+              Product 1
+            </div>
+            <div class="product-single">
+              Product 2
+            </div>
+            <div class="product-single">
+              Product 3
+            </div>
+            <div class="product-single">
+              Product 4
+            </div>
+            <div class="product-single">
+              Product 5
+            </div>
+            <div class="product-single">
+              Product 6
+            </div>
+          </div><!-- #products-container -->
+        </section><!-- #products -->
 
-        <div id="products-featured">
-
-        </div>
-        <div id="products-container">
-          <div class="product-single">
-            Product 1
-          </div>
-          <div class="product-single">
-            Product 2
-          </div>
-          <div class="product-single">
-            Product 3
-          </div>
-          <div class="product-single">
-            Product 4
-          </div>
-          <div class="product-single">
-            Product 5
-          </div>
-          <div class="product-single">
-            Product 6
-          </div>
-        </div>
-
-      </section><!-- #products -->
-
-      <section id="contact">
+      <section id="contact" class="container">
         contact
 
       </section>
     </main><!-- #main -->
 
-    <footer id="footer">
+    <footer id="footer" class="top-40">
+      <div class="container">
       <h3>10% off your first order when you subscribe to our newsletter!</h3>
       <form id="form" class="contact-form" action="index.html" method="post">
         <label id="email-label" for="email">Sign up for the latest news!
         </label>
-        <input type="email" name="email" required placeholder="joanne.doe@email.me">
-        <input type="submit" name="" value="Submit">
+        <input type="email" name="email" id="email" required placeholder="Type your email here">
+        <input type="submit" name="submit" id="submit" value="Submit">
       </form>
+    </div>
     </footer><!-- #footer -->
 
   </body>
