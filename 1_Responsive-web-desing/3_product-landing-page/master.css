@@ -10,24 +10,40 @@
 
 header, main, footer {
   width: 100%;
-
+  padding: 15px;
 }
 
 header {
-  height: 130px;
-  background-color: yellow;
   text-align: center;
+  padding-top: 0;
 }
+
+/* --- moves all content 40px down to accomodate the menu --- */
+.top-40 {
+  position: relative;
+  top: 40px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 02 ------ Typography ------ */
+
+
+/* 03 ------ Main navigation ------ */
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 40px;
 }
 
 #nav-bar ul {
   list-style-type: none;
-
+  margin-top: 10px;
 }
 
 #nav-bar li {
@@ -37,26 +53,22 @@ nav {
 
 #nav-bar li a {
   display: block;
-
   text-decoration: none;
   }
 
-#main {
-  width: 100%;
-  display: flex;
-  flex-wrap:wrap;
+/* 00 ------ Styles for medium size devices ----- */
+
+@media screen and (min-width: 600px) {
+    .half-d {
+      width: 50%;
+    }
+
+    .third-d {
+      width: 33%;
+    }
 }
 
-.top-40 {
-  position: relative;
-  top: 40px;
-}
-
-/* ------ Styles for medium size devices ----- */
-
-
-
-/* ------ Styles for for desktops ----- */
+/* 00 ------ Styles for desktops ------ */
 
 @media screen and (min-width: 900px) {
   .container {
@@ -72,4 +84,5 @@ nav {
     display: block;
     text-align: left;
   }
+
 }
