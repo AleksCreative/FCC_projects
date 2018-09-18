@@ -31,6 +31,10 @@ header, nav, footer {
   padding-top: 0;
 }
 
+button:focus {
+  border: none;
+}
+
 /* 02 ------ Layout fixes ------ */
 
 /* --- moves all content 40px down to accomodate the menu --- */
@@ -134,7 +138,7 @@ header {
 /* 05 ------ Main navigation ------ */
 
 #menu-button {
-  display: none;
+  visibility: hidden;
   border: none;
   position: fixed;
   z-index: 9999;
@@ -147,6 +151,7 @@ header {
   letter-spacing: 1px;
   font-weight: bold;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -185,6 +190,7 @@ nav {
     }
 
     #nav-bar ul {
+      visibility: hidden;
       padding: 0;
       margin: 0;
       position: relative;
@@ -194,7 +200,13 @@ nav {
       box-shadow: 0 1px 2px #872b2c;
     }
     #nav-bar li{
-      display: block;
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      padding-top: 10px;
+    }
+    #nav-bar li:hover {
+      bac#: #cf4c4e;
     }
 
     #nav-bar li a {
@@ -203,8 +215,14 @@ nav {
     }
 
     #menu-button {
+      visibility: visible;
       display: block;
     }
+  }
+
+  #main-menu.open {
+    display: block;
+    visibility: visible;
   }
 
 
