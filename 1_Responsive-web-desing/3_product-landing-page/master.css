@@ -90,6 +90,13 @@ h6 {
   font-size: 18px;
 }
 
+p {
+  margin-bottom: 15px;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -228,6 +235,15 @@ nav {
 
 /* 06 ------ Main ----- */
 
+#about-video iframe{
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#about-intro {
+  align-self: flex-start;
+  padding: 15px;
+}
 .card {
   padding: 15px;
   margin-top: 10px;
